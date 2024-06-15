@@ -1,0 +1,340 @@
+/** root variables **/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/** fonts **/
+
+h1,
+h2,
+h3,
+.paragraph,
+.label {
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Oswald", sans-serif;
+    color: #0c0c0c;
+}
+
+p {
+    font-family: "Quattrocento", serif;
+    color: #0c0c0c;
+}
+
+.hero-title {
+    font-size: clamp(2.8rem, 5vw, 3.15rem);
+    letter-spacing: 1.2px;
+}
+
+.sub-title {
+    padding-bottom: 0.25em;
+
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.paragraph {
+    line-height: 1.6;
+    letter-spacing: -0.1px;
+}
+
+li a {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+}
+
+.paragraph-wrapper p {
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+}
+
+/* header - navigation */
+header {
+    box-shadow: 0px 1px 5px 5px #0c0c0c20;
+}
+
+nav {
+    position: relative;
+    overflow: hidden;
+
+    margin: 0 2%;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    float: right;
+}
+
+li {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+li a {
+    display: block;
+    padding: 1.5em 1.5em;
+
+    font-family: "Oswald", serif;
+    color: #0c0c0c;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    text-decoration: None;
+    text-align: center;
+}
+
+li a:active {
+    color: #383838;
+}
+
+li a:hover {
+    background-color: #dbdbdb80;
+    transition: background-color 0.2s ease-in;
+}
+
+/*Media Query | Phone (portrait) - header-nav */
+@media only screen and (max-width: 600px) {
+    li a:active {
+        color: #383838;
+        text-decoration: underline;
+        background-color: #dbdbdb80;
+    }
+}
+
+/* main - article */
+
+main {
+    margin: 0 auto;
+}
+
+.hero-title {
+    padding: 0.2em;
+}
+
+article {
+    margin: 2.5%;
+    padding: 2em;
+}
+
+wbr {
+    word-wrap: break-word;
+}
+
+#section-1,
+#section-2 {
+    margin: 2%;
+    padding: 1.5em;
+}
+
+.section-wrapper {
+    display: flex;
+    align-items: center;
+
+    margin: 1.5%;
+    padding: 1em;
+}
+
+.paragraph-wrapper {
+    margin: 1%;
+    padding: 0.5em;
+}
+
+.paragraph {
+    margin: 0.5%;
+    padding: 0.25em;
+}
+
+.picture-wrapper {
+    position: relative;
+    margin: 1.5%;
+    padding: 1em;
+}
+
+.picture-1 .img-border,
+.border-position {
+    display: none;
+}
+
+.picture-wrapper img {
+    justify-content: center;
+}
+
+/* || images || */
+.picture-1 img,
+.picture-2 img {
+    width: clamp(18em, 30vw, 28em);
+    height: auto;
+    object-fit: contain;
+
+    margin: 0.5%;
+    padding: 0.25em;
+}
+
+/* Media Query | Tablet (landscape) and small monitors - main-article */
+@media only screen and (max-width: 920px) {
+    .section-wrapper,
+    .picture-1 .img-border,
+    .border-position {
+        display: block;
+    }
+
+    .picture-1 .img-default,
+    .default-position {
+        display: none;
+    }
+
+    .picture-wrapper img {
+        width: clamp(15em, 60vw, 30em);
+    }
+
+    .picture-wrapper .img-border {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Media Query | Phones (portrait) - main-article */
+@media only screen and (max-width: 600px) {
+    .hero-title {
+        font-size: clamp(2rem, 7vw, 2.8rem);
+    }
+
+    article {
+        margin: 1.5%;
+        padding: clamp(0.25em, 2.5vw, 1em);
+    }
+
+    #section-1,
+    #section-2 {
+        margin: 1%;
+        padding: 0.25em;
+    }
+
+    .section-wrapper {
+        margin: 0.5%;
+        padding: 0.25em;
+    }
+
+    .paragraph-wrapper {
+        margin: 0.5%;
+        padding: 0.15em;
+    }
+
+    .paragraph {
+        margin: 0.25%;
+        padding: 0.125em;
+    }
+
+    .picture-wrapper {
+        margin: 1%;
+        padding: 0.5em;
+    }
+
+    .sub-title {
+        padding-bottom: clamp(0.2em, 1.5vw, 0.25em);
+
+        font-size: clamp(1.5rem, 5.5vw, 1.8rem);
+    }
+
+    .paragraph-wrapper p {
+        font-size: clamp(0.8rem, 1.5vw, 1rem);
+    }
+}
+
+/* footer */
+footer {
+    background: #fffafa;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 244, 244, 1) 30%,
+        rgba(255, 250, 250, 1) 60%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background: -webkit-gradient(
+        90deg,
+        rgba(255, 244, 244, 1) 30%,
+        rgba(255, 250, 250, 1) 60%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+        90deg,
+        rgba(255, 244, 244, 1) 30%,
+        rgba(255, 250, 250, 1) 60%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background: -moz-linear-gradient(
+        90deg,
+        rgba(255, 244, 244, 1) 30%,
+        rgba(255, 250, 250, 1) 60%,
+        rgba(255, 255, 255, 1) 100%
+    );
+
+    box-shadow: 0px -1px 5px 5px #0c0c0c20;
+}
+
+.footer-wrapper {
+    margin: 0 2.5%;
+}
+
+footer .footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-left,
+.section-right {
+    margin: 5%;
+    padding: 2.5em;
+}
+
+.section-left a {
+    font-family: "Quattrocento", serif;
+    color: #0c0c0c;
+    text-decoration: none;
+}
+
+.section-left a:hover {
+    text-decoration: underline;
+}
+
+.section-left a:active {
+    color: #383838;
+}
+
+section > h3 {
+    padding-bottom: 0.5em;
+    font-size: 1rem;
+}
+
+.label {
+    line-height: 1.6;
+}
+
+.section-right > p {
+    font-style: italic;
+}
+
+/*Media Query | Tablet - footer */
+@media only screen and (max-width: 600px) {
+    .section-right > p {
+        font-size: clamp(0.8rem, 2.7vw, 1rem);
+    }
+}

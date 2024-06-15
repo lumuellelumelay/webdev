@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quattrocento:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Basic CSS | Style Placement</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">About me</a>
+                        <!-- opens a new page -->
+                    </li>
+                    <li>
+                        <a href="#">Acknowledgement</a>
+                        <!-- opens a new page -->
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <h1 class="hero-title">
+                    Flowers: The Grafitti <wbr />of Nature
+                </h1>
+                <section id="section-1">
+                    <div class="section-wrapper">
+                        <div class="paragraph-wrapper">
+                            <h2 class="sub-title">The Beauty of Flowers</h2>
+                            <p class="paragraph">
+                                Flowers have captivated human beings for
+                                centuries with their beauty, fragrance, and
+                                symbolism. These delicate creations of nature
+                                come in a myriad of colors, shapes, and sizes,
+                                each with its unique charm. From the vibrant
+                                petals of a rose to the intricate patterns of a
+                                sunflower, flowers have inspired poets, artists,
+                                and lovers alike. In this essay, we will explore
+                                the enchanting world of flowers and delve into
+                                their significance in various aspects of human
+                                life.
+                            </p>
+                        </div>
+                        <div class="picture-1 picture-wrapper">
+                            <!-- add link to the author -->
+                            <img
+                                class="img-default"
+                                src="pictures/flower_1_defaultsize.png"
+                                alt="Picture of a flower by Amy Humphries"
+                            />
+                            <img
+                                class="img-border"
+                                src="pictures/flower_1_boardersize.png"
+                                alt="Picture of a flower by Amy Humphries"
+                            />
+                            <!-- change this to picture tag with srcset and size attributes -->
+                        </div>
+                    </div>
+                </section>
+                <section id="section-2">
+                    <div class="section-wrapper">
+                        <div class="default-position picture-2 picture-wrapper">
+                            <!-- add link to the author -->
+                            <img
+                                src="pictures/flower_2_defaultsize.png"
+                                alt="Picture of a flower by Annie Spratt"
+                            />
+                        </div>
+                        <div class="paragraph-wrapper">
+                            <h2 class="sub-title">The Aesthetics of Flowers</h2>
+                            <p class="paragraph">
+                                One cannot help but be mesmerized by the sight
+                                of a field of wildflowers swaying in the breeze
+                                or a bouquet of fresh&mdash;roses adorning a
+                                table. Flowers possess a natural beauty that
+                                transcends cultural boundaries, appealing to
+                                people of all ages and backgrounds. Their
+                                vibrant colors and delicate structures evoke
+                                feelings of joy, serenity, and awe. Artists have
+                                long been inspired by the intricate details of
+                                flowers, capturing their essence in paintings,
+                                sculptures, and other forms of art.
+                            </p>
+                        </div>
+                        <div class="border-position picture-2 picture-wrapper">
+                            <!-- add link to the author -->
+                            <img
+                                class="img-border"
+                                src="pictures/flower_2_boardersize.png"
+                                alt="Picture of a flower by Annie Spratt"
+                            />
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <div class="footer-wrapper">
+                <section class="section-left">
+                    <h3>Credits</h3>
+                    <a
+                        href="https://unsplash.com/"
+                        class="label"
+                        target="_blank"
+                        >Unsplash</a
+                    >
+                </section>
+                <section class="section-right">
+                    <h3>Created by</h3>
+                    <p class="label">Lumelle Sergeye E. Lumuelay | Lesson 2</p>
+                </section>
+            </div>
+        </footer>
+    </body>
+</html>
